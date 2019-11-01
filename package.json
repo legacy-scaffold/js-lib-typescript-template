@@ -15,8 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "antd": "^3.24.3",
-    "tslib": "^1.10.0",
-    "@types/axios": "^0.14.0"
+    "tslib": "^1.10.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.11",
