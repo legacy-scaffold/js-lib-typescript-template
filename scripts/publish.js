@@ -1,14 +1,14 @@
 const spawn = require("cross-spawn");
 
-const hasGit = require("./utils/git_utils/hasGit");
-const isClean = require("./utils/git_utils/isClean");
-const hasRemote = require("./utils/git_utils/hasRemote");
-const runGitInit = require("./utils/git_utils/runGitInit");
-const lastConfirm = require("./utils/lastConfirm");
+const hasGit = require("./git_utils/hasGit");
+const isClean = require("./git_utils/isClean");
+const hasRemote = require("./git_utils/hasRemote");
+const runGitInit = require("./git_utils/runGitInit");
+
 
 
 // 对内发布npm
-async function publishAction() {
+(async function publishAction() {
   try {
     // 完成发布前的提交
     if (!isClean()) {
@@ -33,7 +33,7 @@ async function publishAction() {
   } finally {
     process.exit(0);
   }
-};
+})();
 
 
 
