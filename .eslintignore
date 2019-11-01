@@ -1,5 +1,5 @@
-/dist/
-/scripts/
-/node_modules/
-/webpack.config/
+/dist
+/scripts
+/node_modules
+/webpack.config
 
