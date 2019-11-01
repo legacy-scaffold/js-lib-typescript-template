@@ -15,7 +15,7 @@
     "experimentalDecorators": true,
   },
   "include": [
-    "../lib"
+    "../src"
   ],
   "exclude": [
     "../examples",

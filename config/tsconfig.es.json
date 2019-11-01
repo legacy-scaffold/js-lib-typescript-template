@@ -5,7 +5,7 @@
     "module": "commonjs",
     "outDir": "../dist",
     "rootDirs": [
-      "../lib"
+      "../src"
     ],
   }
 }

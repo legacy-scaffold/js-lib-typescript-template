@@ -7,9 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "pub:crgt": "node ./scripts/publish.js",
+    "start": "webpack-dev-server --config ./config/webpack.config.dev.js",
     "build": "tsc --build ./config/tsconfig.es.json",
-    "start": "webpack-dev-server --config ./config/webpack.config.dev.js"
+    "pub:crgt": "npm run build && node ./scripts/publish.js"
   },
   "keywords": [],
   "author": "",
