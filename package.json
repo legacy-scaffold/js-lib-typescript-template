@@ -1,7 +1,7 @@
 {
-  "name": "ts-lib",
+  "name": "ts-lib-client-pc",
   "version": "1.0.1",
-  "description": "",
+  "description": "pc端的js库文件脚手架",
   "main": "./dist/es",
   "directories": {
     "lib": "lib"
