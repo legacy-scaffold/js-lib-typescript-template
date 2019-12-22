@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.dev.js",
-    "build": "babel ./src/ --out-dir ./dist/ --extensions .tsx --extensions .ts --extensions .js --extensions .jsx"
+    "build": "babel ./src/ --out-dir ./dist/ --extensions .tsx --extensions .ts"
   },
   "keywords": [],
   "author": "",
