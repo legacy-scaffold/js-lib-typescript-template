@@ -3,7 +3,7 @@ const path = require("path");
 
 
 module.exports = {
-  entry: path.resolve("./examples/index.tsx"),
+  entry: path.resolve("./example/index.tsx"),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "../"),
@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [{
       test: /(\.ts)||(\.tsx)$/,
-      use: [{ loader: "ts-loader" }],
+      use: [{ loader: "babel-loader" }],
       exclude: /node_modules/
     }, {
       test: /\.css$/,

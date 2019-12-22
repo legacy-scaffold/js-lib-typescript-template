@@ -2,7 +2,7 @@
 const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const wbpack_base_config = require("./webpack.config.base");
+const wbpack_base_config = require("./webpack.base");
 
 
 module.exports = merge(wbpack_base_config, {
