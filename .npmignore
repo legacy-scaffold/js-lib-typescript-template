@@ -1,7 +1,9 @@
+/src/
 /config/
-/scripts/
-/examples/
+/example/
+.babelrc
 .eslintrc.js
 .gitignore
 .eslintignore
 tsconfig.json
+package-lock.json
