@@ -14,6 +14,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "diagnostics":true,
+    "declaration":true,
     "importHelpers":true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
@@ -23,8 +24,5 @@
     "paths":{
       "@/*": ["./src/*"]
     }
-  },
-  "include": [
-    "./src/**/*"
-  ]
+  }
 }

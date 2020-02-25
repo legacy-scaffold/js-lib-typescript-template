@@ -1,6 +1,6 @@
 /* eslint-disable*/
 const path = require("path");
-
+const tsImportPluginFactory = require("ts-import-plugin");
 
 module.exports = {
   entry: path.resolve("./example/index.tsx"),
@@ -13,7 +13,20 @@ module.exports = {
   module: {
     rules: [{
       test: /(\.ts)||(\.tsx)$/,
-      use: [{ loader: "ts-loader" }],
+      use: [{
+        loader: "ts-loader",
+        options: {
+          transpileOnly: true,
+          getCustomTransformers: () => ({
+            before: [tsImportPluginFactory({
+              libraryName: "antd",
+              libraryDirectory: "lib",
+              style: true
+            })]
+          }),
+          compilerOptions: { module: "es2015" }
+        },
+      }],
       exclude: /node_modules/
     }, {
       test: /\.css$/,
