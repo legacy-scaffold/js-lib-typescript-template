@@ -7,11 +7,12 @@ class ComponentName extends React.Component<any, any> {
   constructor(props: {}) {
     super(props);
     this.state = {};
-  };
+  }
 
   render() {
     return (
       <div>TypeScript React</div>)
-  };
-};
+  }
+}
+
 export default ComponentName;

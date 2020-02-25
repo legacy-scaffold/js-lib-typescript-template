@@ -8,12 +8,12 @@ module.exports = {
     alias: {
       "@": path.resolve(__dirname, "../"),
     },
-    extensions: [".ts", ".tsx", ".js", ".css", ".less", ".scss"],
+    extensions: [".tsx", ".ts", ".js", ".css", ".less", ".scss"],
   },
   module: {
     rules: [{
       test: /(\.ts)||(\.tsx)$/,
-      use: [{ loader: "babel-loader" }],
+      use: [{ loader: "babel-loader" }, { loader: "ts-loader" }],
       exclude: /node_modules/
     }, {
       test: /\.css$/,
